@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    font-family: 'OpenSans', "Open Sans", Arial, Helvetica, sans-serif, 'SimSun', '宋体';
+    position: relative;
+    margin-top: 150px;
+    padding-top: 10px;
+    bottom: 0;
+    width: 100%;
+    color: #333333;
+    background: #E8E8E8;
+}
+.min-content{
+    display: flex;
+}
+.min-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box .span-info{
+    margin: 8px 0;
+    font-size: 22px;
+}
+.box .cont{
+    margin: 15px 0 0 0;
+    position: relative;
+}
+.left .cont P{
+    text-align: justify;
+    color: #8C8C8C;
+}
+.left .cont .social{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.left .cont .social a{
+    padding: 0 2px;
+}
+.left .cont .social a span{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    color: #FFFFFF;
+    background: #8C8C8C;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.left .cont .social a span:hover{
+    background: #333333;
+}
+.center .cont .fas{
+    font-size: 1.4375rem;
+    background: #ffffff;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+.center .cont .fas:hover{
+    background: #333333;
+    color: #ffffff;
+}
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center .cont .phone{
+    margin: 10px 0;
+}
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #333333;
+}
+.right form .msg{
+    margin-top: 10px;
+}
+.right form input, .right form textarea{
+    width: 100%;
+    background: #ffffff;
+    padding-left: 10px;
+    color: #000000;
+    outline: none;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+}
+.right form input{
+    height: 35px;
+}
+.right form .btnfooter{
+    margin-top: 10px;
+}
+.right form .btnfooter button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #333333;
+    letter-spacing: 1px;
+    font-size: 1.0625rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.right form .btnfooter button:hover{
+    background: #000;
+}
+.bottom center{
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 0.9375rem;
+    background: #333333;
+}
+.bottom center span{
+    color: #F2F2F2;
+}
+.bottom center a{
+    color: #45F3FF;
+    text-decoration: none;
+}
+.bottom center a:hover{
+    text-decoration: underline;
+}
+@media(max-width: 800px){
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+    .min-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .min-content .box{
+        margin: 5px;
+    }
+}

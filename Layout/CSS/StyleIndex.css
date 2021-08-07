@@ -1,0 +1,127 @@
+
+.templates{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.template-grand{
+    width:  100%;
+    height: auto;
+    /* background-image: linear-gradient(180deg,#fff,#F2F2F2);
+    padding: 15px; */
+    border-radius: 0 5px 5px 0;
+}
+.template-petite{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    bottom: -12%;
+    left: 5%;
+    width: 45%;
+    height: auto;
+    background-image: linear-gradient(180deg,#fff,#F2F2F2);
+    padding: 10px;
+    border-radius: 5px;
+}
+.template-img{
+    border-radius: 0 0 5px 5px;
+}
+/*  */
+.classements{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    font-family: Verdana;
+}
+.classements .classement{
+    width: 500px;
+    height: auto;
+}
+/*  */
+.list-choix{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana;
+    margin: 20px 0;
+}
+.list-produit{
+    background: #ffffff;
+    width: 95%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.list-info{
+    position: relative;
+}
+.list-info a{
+    text-decoration: none;
+}
+.list-nom-cat{
+    margin-left: 10px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.list-voir{
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    color: #ff4747;
+    font-weight: 500;
+}
+.list-icon{
+    position: absolute;
+    top: 5px;
+    font-size: 18px;
+}
+.flickity-page-dots{
+    display: none;
+}
+/* Cat */
+.templates-cat{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 30px auto;
+    margin-top: 20px;
+}
+.template-cat{
+    width: 95%;
+}
+.cat-img{
+    width: 100%;
+    border-radius: 5px;
+}
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+@media (max-width: 1000px){
+    .classements{
+        margin-top: 80px;
+    }
+}
+@media (max-width: 800px){
+    .classements{
+        margin-top: 60px;
+    }
+}
+@media (max-width: 600px){
+    .list-produit{
+        width: 100%;
+        height: auto;
+    }
+    .classements{
+        margin-top: 40px;
+    }
+    .classements .classement{
+        width: 90%;
+    }
+}

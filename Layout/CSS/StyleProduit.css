@@ -1,0 +1,264 @@
+body{
+    background-color: #F2F2F2;
+}
+.bd-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    min-width: 500px;
+    align-items: center;
+    gap: 1rem;
+}
+.cart{
+    position: relative;
+    width: 220px;
+    height: 320px;
+    /* box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1); */
+    font-family: Verdana;
+    text-align: center;
+    overflow: hidden;
+    /* border-radius: 10px; */
+    /* margin: 35px 15px; */
+}
+.cart-cat{
+    background-color: #ffffff;
+    margin: 20px 10px 10px 10px;
+    border-radius: 7px;
+}
+.cart-slider{
+    margin: 20px 10px 10px 10px;
+    height: 285px;
+}
+.cart-slider:hover{
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.price-cerner{
+    background-color: #ffffff;
+    transition: all .6s;
+}
+.img-wrapper{
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-wrapper .img{
+    width: 100%;
+    height: 100%;
+    transition: all .6s;
+}
+.img-slider{
+    border-radius: 5px;
+}
+.content-wrapper{
+    transition: all .6s;
+}
+.title{
+    margin: 6px  0;
+}
+.title a{
+    text-decoration: none;
+    color: #525552;
+    white-space: nowrap;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.title a:hover{
+    color: #E62E04;
+    text-decoration: underline;
+}
+.price{
+    font-family: 'OpenSans', "Open Sans", Arial, Helvetica, sans-serif, 'SimSun', '宋体';
+    position: relative;
+    margin-bottom: 8px;
+}
+.price .status{
+    left: 15px;
+    top: 5px;
+    position: absolute;
+    color: #B1B1B1;
+}
+.price .status .svgstutas{
+    color: #E62E04;
+}
+.price .prix{
+    right: 15px;
+    top: -2px;
+    font-size: 18px;
+    position: absolute;
+    letter-spacing: 1px;
+}
+.price .prix-max{
+    right: 26px;
+    top: 15px;
+    font-size: 14px;
+    color: #B1B1B1;
+}
+.price .prix-max hr{
+    position: absolute;
+    top: 9px;
+    width: 100%;
+}
+.icons{
+    position: relative;
+    width: 70%;
+    display: flex;
+    margin: 40px auto 60px auto;
+}
+.icon{
+    position: absolute;
+    cursor: pointer;
+    left: -25px;
+    padding: 6px 12px 6px 12px;
+}
+.icon .eyevoir{
+    top: 7px;
+    font-size: 18px;
+    position: absolute;
+}
+.icon span{
+    margin-left: 20px;
+}
+.icon:hover{
+    color: #E62E04;
+}
+.icons .iconcheter{
+    position: absolute;
+    cursor: pointer;
+    top: -3px;
+    right: -16px;
+    font-size: 32px;
+    color: BLACK;
+}
+.icons .iconcheter:hover{
+    color: #E62E04;
+}
+.like-plus{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 10px;
+    left: -12px;
+}
+.like-plus:hover{
+    color: #E62E04;
+}
+.likelike-plus{
+    font-size: 28px;
+    cursor: pointer;
+}
+.like{
+    position: absolute;
+    cursor: pointer;
+    background-color: #ffffff;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.like .likelike{
+    margin-top: 7px;
+    font-size: 30px;
+}
+.like:hover{
+    color: #F64B2D;
+}
+.likeout{
+    display: none;
+}
+.liked{
+    color: #F64B2D;
+}
+/* --- */
+.info{
+    transition: all .6s;
+}
+.info .statusinfo{
+    color: #E62E04;
+}
+.info .info-buz{
+    width: 100%;
+    font-size: 15px;
+    height: 98px;
+    max-height: 98px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: gray;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+.info .lesinfo{
+    position: relative;
+    padding: 6px 12px 6px 40px;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    border: rgba(0, 0, 0, 0.1) 1px solid;
+}
+.iconinfo{
+    position: absolute;
+    background-color: #E62E04;
+    padding: 6px 6px 0 6px;
+    font-size: 20px;
+    border-radius: 25px;
+    color: #ffffff;
+    left: 0px;
+    top: 0px;
+}
+.nomberinfo{
+    font-weight: bold;
+}
+.nominfo{
+    color: rgb(0, 0, 0);
+}
+.info .boom{
+    margin: 30px;
+}
+.buttons .annule{
+    cursor: pointer;
+    position: absolute;
+    font-size: 16px;
+    padding: 6px 12px 6px 12px;
+    background-color: #EEE;
+    border-radius: 25px;
+    float: left;
+    bottom: -58px;
+    left: 20px;
+    box-shadow: -3px -3px 10px 0 rgba(255, 255, 255, 0.7),
+    3px 3px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.buttons .acheter{
+    position: absolute;
+    font-size: 35px;
+    bottom: -65px;
+    right: 20px;
+    color: #000000;
+    cursor: pointer;
+}
+/*  */
+.img-plus{
+    transform: scale(0);
+    transform-origin: top;
+}
+.content-wrapper-plus{
+    transform: translateY(-230px);
+}
+.icons-plus{
+    display: none;
+}
+.title-plus{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #000000;
+    transition: all .6s;
+}
+/*  */
+.flickity-page-dots{
+    display: none;
+}

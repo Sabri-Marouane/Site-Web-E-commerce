@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.forminfo{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin-left: 30%;
+}
+.content .logo-in{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.content .logo-in header{
+    position: absolute;
+    left: 45px;
+    color: #0F3959;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 40px 0 50px 0;
+    font-family: sans-serif;
+}
+.content .logo-in img{
+    position: absolute;
+    margin-top: 100px;
+    left: 55px;
+    width: 250px;
+    height: 250px;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ddd;
+    border-radius: 30px;
+}
+.toggle-btn{
+   padding: 10px 20px; 
+   cursor: pointer;
+   background: transparent;
+   border: 0;
+   outline: none;
+   position: relative;
+}
+.btnlok{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #0085C0,#45F3FF);
+    border-radius:30px ;
+    transition: .5s;
+}
+.form{
+    position: relative;
+    height: 100%;
+}
+/*  */
+.content .forminfo .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.content .forminfo .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 50px;
+    margin: 10px 0 10px ;
+    transition: .5s;
+}
+.content .forminfo .row100 .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    /* color: #999; */
+}
+.content .forminfo .row100 .inputBox input{
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    padding: 4px 10px;
+    z-index: 1;
+    color: #0F3959;
+    border-bottom: 1px solid #0f1427;
+}
+.content .forminfo .row100 .inputBox .info{
+    position: absolute;
+    font-size: 20px;
+    bottom: 22px;
+    color: #04111a;
+    z-index: 2;
+}
+.content .forminfo .row100 .inputBox .text{
+    position: absolute;
+    top: -12px;
+    left: 0;
+    line-height: 40px;
+    font-size: 16px;
+    display: block;
+    transition: .5s;
+    pointer-events: none;
+}
+.content .forminfo .row100 .inputBox .erreur{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    font-size: small;
+    letter-spacing: 1px;
+    color: #D93025;
+}
+.content .forminfo .row100 .inputBox .eye{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+.content .forminfo .row100 .inputBox .eyeopen{
+    display: none;
+}
+.content .forminfo .row100 .inputBox  input:focus ~ .text,
+.content .forminfo .row100 .inputBox  input:valid ~ .text{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #0085C0;
+}
+.boom{
+    transform: translateY(-20px);
+    font-weight: 400;
+    color: #D93025;
+}
+.content .forminfo .row100 .inputBox  input:focus ~ .text::after{
+    content: '*';
+    position: absolute;
+    font-size: 20px;
+    color: #ea2027;
+    margin-left: 3px;
+    top: 4px;
+}
+.content .forminfo .row100 input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: linear-gradient(to right,#0085C0, #0F3959);
+    color: #fff;
+    border: none;
+    width: 150px;
+    padding: 12px;
+    top: 20px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.content .forminfo .row100 input[type="submit"]:hover{
+    background-color: #45F3FF;
+}
+.liko{
+    opacity: 0.5;
+}
+/*  */
+#login{
+    margin-top: 90px;
+}
+#login .inputBox .text{
+    padding: 0 28px;
+}
+#login .inputBox input{
+    padding: 4px 30px;
+}
+#login .row100{
+    width: 80%;
+    margin-left: 80px;
+}
+#login .row100 input[type="submit"]{
+    background: linear-gradient(to right,#0F3959,#0085C0);
+}
+#insription{
+    display: none;
+}
+@media(max-width: 1100px){
+    .logo-in{
+        display: none;
+    }
+    .forminfo{
+        position: relative;
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+@media(max-width: 749px){
+    .content{
+        width: 90%;
+        height: 90%;
+    }
+    #login .row100{
+        margin-left: 60px;
+    }
+}
+@media(max-width: 600px){
+    #login .row100{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+.lokbtn{
+    left: 110px;
+    background: linear-gradient(to right,#45F3FF, #0085C0);
+
+}
